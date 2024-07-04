@@ -18,7 +18,9 @@ t_complex sum_complex(t_complex z1, t_complex z2)
 t_complex squire_complex(t_complex z)
 {
     t_complex result;
-    result.x = (z.x * z.x) - (z.y * z.y);
-    result.y = 2 * z.x * z.y;
+    result.x = (z.x * z.x) - (z.y * z.y) -0.4;
+    result.y = 2 * z.x * z.y + 0.6;
+    // result.x = fabs(result.x);
+    // result.y = fabs(result.y);
     return (result);
 }

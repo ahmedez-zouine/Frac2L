@@ -2,9 +2,12 @@
 #define FRACTOL
 
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <math.h>
 #include <mlx.h>
+#include <X11/X.h>
 
 #define HEIGHT 800
 #define WIDTH 800
@@ -31,10 +34,10 @@ typedef struct s_fractol
   char  *name;
   void  *mlx_connect;
   void  *mlx_window;
-  t_img myimg;
+  t_img *myimg;
   int   max_scepe;
   int   iteration;
-  int   zoom;
+  double   zoom;
 } t_fractol;
 
 
@@ -48,7 +51,9 @@ t_complex sum_complex(t_complex z1, t_complex z2);
 double  map(double unscaled_num, double new_min, double new_max, double old_min, double old_max);
 void  ft_init_date(t_fractol *fr);
 int key_hook(int keycode, t_fractol *fr);
-
+int ft_handleKey(int keys, t_fractol *fr);
+int ft_zoom(int wheel,  int x, int y, t_fractol *fr);
+void     ft_display(t_fractol *fr);
 
 #define BLACK       0x000000  // RGB(0, 0, 0)
 #define WHITE       0xFFFFFF  // RGB(255, 255, 255)
