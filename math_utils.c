@@ -1,26 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   math_utils.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aez-zoui <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/07 09:40:45 by aez-zoui          #+#    #+#             */
+/*   Updated: 2024/07/07 09:40:54 by aez-zoui         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fractol.h"
 
-// [0..799] --> [-2.2]
-
-double map(double unscaled_num, double new_min, double new_max, double old_min, double old_max)
+double	map(double unscaled_num, double new_min, double new_max, double old_max)
 {
-    return (new_max - new_min) * (unscaled_num - old_min) / (old_max - old_min) + new_min;
+	return ((new_max - new_min) * (unscaled_num - 0) / (old_max - 0) + new_min);
 }
 
-t_complex sum_complex(t_complex z1, t_complex z2)
+void	calc_julia(double *r, double *i, t_fractol *fr)
 {
-    t_complex result;
-    result.x = z1.x + z2.x;
-    result.y = z1.y + z2.y;
-    return (result);
-}
+	double	tmp;
 
-t_complex squire_complex(t_complex z)
-{
-    t_complex result;
-    result.x = (z.x * z.x) - (z.y * z.y) -0.4;
-    result.y = 2 * z.x * z.y + 0.6;
-    // result.x = fabs(result.x);
-    // result.y = fabs(result.y);
-    return (result);
+	tmp = (*r * *r) - (*i * *i) + fr->real;
+	*i = (2 * *r * *i) + fr->imag;
+	*r = tmp;
 }
