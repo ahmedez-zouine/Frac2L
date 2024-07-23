@@ -15,7 +15,11 @@
 void	ft_start(char *argv[], t_fractol *fract)
 {
 	fract = malloc(sizeof(t_fractol));
+	if (!fract)
+		malloc_error(fract);
 	fract->myimg = malloc(sizeof(t_img));
+	if (!fract->myimg)
+		malloc_error(fract);
 	fract->zoom = 1.0;
 	fract->iteration = 42;
 	fract->shift_x = 0.0;
@@ -24,16 +28,16 @@ void	ft_start(char *argv[], t_fractol *fract)
 	{
 		if (ft_atof(argv[2]) == -42 || ft_atof(argv[3]) == -42)
 		{
-			ft_cleanup(fract);
+			free(fract->myimg);
+			free(fract);
 			ft_putstr_fd(2, "Argument Error *__* ");
 		}
 		fract->real = ft_atof(argv[2]);
-		fract->imag = ft_atof(argv[3]);
+		fract->imag = ft_atof(argv[3]) * -1;
 	}
 	fract->name = argv[1];
 	ft_mlxinit(fract);
 	ft_display(fract);
-	mlx_mouse_hook(fract->mlx_window, ft_zoom, fract);
 	mlx_loop(fract->mlx_connect);
 }
 

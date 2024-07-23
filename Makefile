@@ -1,4 +1,4 @@
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 MLX_FLAGS = -lmlx -lXext -lX11 -lm
 NAME = fractol

@@ -21,8 +21,8 @@ void	malloc_error(t_fractol *fr)
 void	ft_init_events(t_fractol *fr)
 {
 	mlx_key_hook(fr->mlx_window, ft_key_hook, fr);
-	mlx_hook(fr->mlx_window, 2, KeyPressMask, ft_key_hook, fr);
-	mlx_hook(fr->mlx_window, 17, StructureNotifyMask, ft_close_window, fr);
+	mlx_hook(fr->mlx_window, 17, 1L << 17, ft_close_window, fr);
+	mlx_mouse_hook(fr->mlx_window, ft_zoom, fr);
 }
 
 void	ft_mlxinit(t_fractol *fr)
