@@ -28,26 +28,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Mathematical Foundations](#mathematical-foundations)
-  - [1. The Mandelbrot Set](#1-the-mandelbrot-set)
-  - [2. The Julia Set](#2-the-julia-set)
-  - [3. The Tricorn (Mandelbar) Set](#3-the-tricorn-mandelbar-set)
-  - [4. Escape-Time Algorithm & Color Mapping](#4-escape-time-algorithm--color-mapping)
-- [Project Architecture](#project-architecture)
-- [Controls & Navigation](#controls--navigation)
-- [Recommended Julia Coordinates](#recommended-julia-coordinates)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation & Build](#installation--build)
-  - [Usage Examples](#usage-examples)
-- [Code Quality & Norm Compliance](#code-quality--norm-compliance)
-- [Author & Credits](#author--credits)
-
----
-
 ## Overview
 
 In mathematics, a **fractal** is a geometric shape containing complex, self-similar structure at arbitrarily small scales. No matter how much you magnify a fractal boundary, you uncover infinite layers of intricate, repeating patterns.
