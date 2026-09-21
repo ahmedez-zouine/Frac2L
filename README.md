@@ -105,7 +105,7 @@ This alteration breaks standard holomorphic Cauchy-Riemann symmetries and produc
 
 Pixels that remain bounded after `iteration` steps are colored pitch black (`0x000000`), signifying interior membership. Pixels that escape at step $k < \text{iteration}$ are mapped across a vibrant color gradient using linear interpolation:
 
-$$\text{Color}(k) = \text{map}(k, \text{0xFFFFFF}, \text{0xFF00FF}, \text{max\_iterations})$$
+$$\text{Color}(k) = \text{map}(k, \text{0xFFFFFF}, \text{0xFF00FF}, \text{iteration})$$
 
 ---
 
