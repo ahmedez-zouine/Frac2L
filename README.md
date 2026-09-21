@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌀 Frac2L — 2D Fractal Explorer
+# Frac2L — 2D Fractal Explorer
 
 **An interactive, high-performance 2D fractal visualizer crafted in C with MiniLibX.**  
 *Developed as part of the 42 Network curriculum (fract-ol project).*
@@ -15,7 +15,7 @@
 
 ---
 
-## 📸 Visual Showcase
+## Visual Showcase
 
 <div align="center">
 
@@ -28,27 +28,27 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Mathematical Foundations](#-mathematical-foundations)
+- [Overview](#overview)
+- [Mathematical Foundations](#mathematical-foundations)
   - [1. The Mandelbrot Set](#1-the-mandelbrot-set)
   - [2. The Julia Set](#2-the-julia-set)
   - [3. The Tricorn (Mandelbar) Set](#3-the-tricorn-mandelbar-set)
   - [4. Escape-Time Algorithm & Color Mapping](#4-escape-time-algorithm--color-mapping)
-- [Project Architecture](#-project-architecture)
-- [Controls & Navigation](#-controls--navigation)
-- [Recommended Julia Coordinates](#-recommended-julia-coordinates)
-- [Getting Started](#-getting-started)
+- [Project Architecture](#project-architecture)
+- [Controls & Navigation](#controls--navigation)
+- [Recommended Julia Coordinates](#recommended-julia-coordinates)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation & Build](#installation--build)
   - [Usage Examples](#usage-examples)
-- [Code Quality & Norm Compliance](#-code-quality--norm-compliance)
-- [Author & Credits](#-author--credits)
+- [Code Quality & Norm Compliance](#code-quality--norm-compliance)
+- [Author & Credits](#author--credits)
 
 ---
 
-## 🌌 Overview
+## Overview
 
 In mathematics, a **fractal** is a geometric shape containing complex, self-similar structure at arbitrarily small scales. No matter how much you magnify a fractal boundary, you uncover infinite layers of intricate, repeating patterns.
 
@@ -60,7 +60,7 @@ In mathematics, a **fractal** is a geometric shape containing complex, self-simi
 
 ---
 
-## 📐 Mathematical Foundations
+## Mathematical Foundations
 
 All fractals in this engine are simulated on the **Complex Plane** $\mathbb{C}$, where any point $z \in \mathbb{C}$ is represented as:
 
@@ -109,7 +109,7 @@ $$\text{Color}(k) = \text{map}(k, \text{0xFFFFFF}, \text{0xFF00FF}, \text{max\_i
 
 ---
 
-## 🏗 Project Architecture
+## Project Architecture
 
 The codebase has been refactored into a clean, modular structure following the standard conventions of high-grade C projects:
 
@@ -149,7 +149,7 @@ Frac2L/
 
 ---
 
-## 🎮 Controls & Navigation
+## Controls & Navigation
 
 | Control | Action | Details |
 |:---|:---|:---|
@@ -162,7 +162,7 @@ Frac2L/
 
 ---
 
-## 🧪 Recommended Julia Coordinates
+## Recommended Julia Coordinates
 
 The Julia set produces wildly different topological structures depending on the coordinates of $c$. Try these fascinating coordinates:
 
@@ -178,7 +178,7 @@ The Julia set produces wildly different topological structures depending on the 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -237,7 +237,7 @@ Available Fractals:
 
 ---
 
-## 🛡 Code Quality & Norm Compliance
+## Code Quality & Norm Compliance
 
 - **42 Norminette**: All source files adhere strictly to the 42 School coding standard (function lengths $\le 25$ lines, max 4 parameters, max 5 functions per file, explicit variable declaration).
 - **Memory Safety**: No memory leaks. All allocated textures, image buffers, window pointers, and MLX display contexts are deallocated upon window close or ESC interrupt.
@@ -245,7 +245,7 @@ Available Fractals:
 
 ---
 
-## 👨‍💻 Author & Credits
+## Author & Credits
 
 Designed and maintained by **Ahmed Ez-Zouine** (`aez-zoui`):
 - **GitHub**: [@ahmedez-zouine](https://github.com/ahmedez-zouine)
@@ -254,5 +254,5 @@ Designed and maintained by **Ahmed Ez-Zouine** (`aez-zoui`):
 ---
 
 <div align="center">
-  <sub>⭐️ If you enjoyed exploring the infinite beauty of fractals with Frac2L, consider starring the repo! ⭐️</sub>
+  <sub>If you enjoyed exploring the infinite beauty of fractals with Frac2L, consider starring the repo!</sub>
 </div>
