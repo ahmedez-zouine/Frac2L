@@ -1,0 +1,36 @@
+# Build Outputs & Binaries
+fractol
+*.out
+*.exe
+*.app
+
+# Object Files & Build Directory
+obj/
+*.o
+*.a
+*.so
+*.dylib
+
+# Temporary & Editor Files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Debug & Profiling
+*.dSYM/
+*.gdb
+gmon.out
+valgrind-out.txt
