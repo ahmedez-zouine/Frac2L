@@ -1,8 +1,8 @@
 <div align="center">
 
-# Frac2L — 2D Fractal Explorer
+# Frac2L 
 
-**An interactive, high-performance 2D fractal visualizer crafted in C with MiniLibX.**  
+**An interactive, high-performance fractal visualizer crafted in C with MiniLibX.**  
 *Developed as part of the 42 Network curriculum (fract-ol project).*
 
 [![42 Network](https://img.shields.io/badge/School-42%20Network-000000?style=for-the-badge&logo=42)](https://42.fr/)
