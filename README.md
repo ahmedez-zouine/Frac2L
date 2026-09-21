@@ -233,6 +233,12 @@ Designed and maintained by **Ahmed Ez-Zouine** (`aez-zoui`):
 
 ---
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
 <div align="center">
   <sub>If you enjoyed exploring the infinite beauty of fractals with Frac2L, consider starring the repo!</sub>
 </div>
